@@ -1,0 +1,227 @@
+/* ===============================
+   PALETA DE COLORES CENTRALIZADA
+   SISTEMA ODONTOLÓGICO DR. MUELAS
+   =============================== */
+
+:root {
+  /* ========================================
+     COLORES PRINCIPALES - IDENTIDAD CORPORATIVA
+     ======================================== */
+  
+  /* Azules Corporativos */
+  --color-primary: #0F2A44;        /* Azul marino principal */
+  --color-secondary: #1E6F78;      /* Azul petróleo secundario */
+  --color-accent: #4FB3C2;         /* Acento azul claro */
+  --color-light-blue: #E3F2FD;     /* Azul muy claro para fondos */
+  
+  /* Neutros */
+  --color-white: #FFFFFF;
+  --color-gray-50: #F8F9FA;
+  --color-gray-100: #F2F4F6;       /* Fondo general */
+  --color-gray-200: #E9ECEF;
+  --color-gray-300: #DEE2E6;
+  --color-gray-400: #CED4DA;
+  --color-gray-500: #ADB5BD;
+  --color-gray-600: #6B7280;       /* Texto secundario */
+  --color-gray-700: #495057;
+  --color-gray-800: #343A40;
+  --color-gray-900: #1A1A1A;       /* Texto principal */
+  
+  /* ========================================
+     COLORES DE ESTADO - SISTEMA DE CITAS
+     ======================================== */
+  
+  /* Estados de Citas */
+  --cita-programada: #3498db;      /* Azul para citas programadas */
+  --cita-atendida: #2ecc71;        /* Verde para citas atendidas */
+  --cita-cancelada: #e74c3c;       /* Rojo para citas canceladas */
+  --cita-no-asistio: #95a5a6;      /* Gris para no asistió */
+  
+  /* Estados Generales */
+  --color-success: #2E8B57;        /* Verde éxito */
+  --color-warning: #E6A700;        /* Amarillo advertencia */
+  --color-danger: #C0392B;         /* Rojo peligro */
+  --color-info: #1976d2;           /* Azul información */
+  
+  /* ========================================
+     COLOLES POR ROL - SISTEMA DE USUARIOS
+     ======================================== */
+  
+  /* Odontólogo */
+  --rol-odontologo: #1E6F78;       /* Azul petróleo */
+  --rol-odontologo-light: #E8F4F5;
+  --rol-odontologo-dark: #155A62;
+  
+  /* Recepcionista */
+  --rol-recepcionista: #4FB3C2;    /* Acento azul claro */
+  --rol-recepcionista-light: #E8F7F9;
+  --rol-recepcionista-dark: #3A9BB0;
+  
+  /* Administrador */
+  --rol-admin: #0F2A44;            /* Azul marino */
+  --rol-admin-light: #E8EAED;
+  --rol-admin-dark: #0A1E33;
+  
+  /* ========================================
+     COLORES DE UI COMPONENTS
+     ======================================== */
+  
+  /* Botones */
+  --btn-primary-bg: var(--color-primary);
+  --btn-primary-hover: #0c2237;
+  --btn-secondary-bg: var(--color-secondary);
+  --btn-secondary-hover: #1A5A63;
+  
+  /* Formularios */
+  --input-border: #CED4DA;
+  --input-focus: var(--color-accent);
+  --input-bg: var(--color-white);
+  --input-disabled: var(--color-gray-100);
+  
+  /* Tarjetas y Contenedores */
+  --card-bg: var(--color-white);
+  --card-border: var(--color-gray-200);
+  --card-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --card-radius: 10px;
+  
+  /* Sidebar */
+  --sidebar-bg: var(--color-gray-900);
+  --sidebar-text: var(--color-white);
+  --sidebar-hover: var(--color-gray-800);
+  --sidebar-active: var(--color-primary);
+  
+  /* Header */
+  --header-bg: var(--color-primary);
+  --header-text: var(--color-white);
+  
+  /* ========================================
+     COLORES PARA MODO OSCURO (FUTURO)
+     ======================================== */
+  
+  --dark-bg: #1A1A1A;
+  --dark-surface: #2D2D2D;
+  --dark-text: #FFFFFF;
+  --dark-text-secondary: #B0B0B0;
+  
+  /* ========================================
+     VARIABLES DE DISEÑO
+     ======================================== */
+  
+  /* Espaciado */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  
+  /* Bordes y Sombras */
+  --border-radius-sm: 6px;
+  --border-radius: 10px;
+  --border-radius-lg: 15px;
+  --border-radius-full: 50%;
+  
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+  
+  /* Transiciones */
+  --transition-fast: 0.15s ease;
+  --transition: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Tipografía */
+  --font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  
+  /* ========================================
+     COLORES ESPECÍFICOS PARA COMPONENTES
+     ======================================== */
+  
+  /* Calendario */
+  --calendar-bg: var(--color-white);
+  --calendar-border: var(--color-gray-200);
+  --calendar-today: var(--color-accent);
+  --calendar-selected: var(--color-primary);
+  --calendar-event: var(--cita-programada);
+  
+  /* Tablas */
+  --table-header-bg: var(--color-primary);
+  --table-header-text: var(--color-white);
+  --table-row-hover: var(--color-gray-50);
+  --table-border: var(--color-gray-200);
+  
+  /* Alertas y Notificaciones */
+  --alert-success-bg: #e6f4ee;
+  --alert-success-border: var(--color-success);
+  --alert-warning-bg: #fff7e6;
+  --alert-warning-border: var(--color-warning);
+  --alert-danger-bg: #fdecea;
+  --alert-danger-border: var(--color-danger);
+  --alert-info-bg: var(--color-light-blue);
+  --alert-info-border: var(--color-info);
+  
+  /* Badges y Etiquetas */
+  --badge-radius: 20px;
+  --badge-font-size: 0.8rem;
+  --badge-padding: 6px 12px;
+  
+  /* Campos de solo lectura */
+  --readonly-bg: var(--color-gray-100);
+  --readonly-border: var(--color-gray-300);
+  --readonly-text: var(--color-gray-700);
+}
+
+/* ========================================
+   CLASES UTILITARIAS DE COLOR
+   ======================================== */
+
+/* Textos */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.text-success { color: var(--color-success); }
+.text-warning { color: var(--color-warning); }
+.text-danger { color: var(--color-danger); }
+.text-muted { color: var(--color-gray-600); }
+
+/* Fondos */
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-success { background-color: var(--color-success); }
+.bg-warning { background-color: var(--color-warning); }
+.bg-danger { background-color: var(--color-danger); }
+.bg-light { background-color: var(--color-gray-50); }
+.bg-white { background-color: var(--color-white); }
+
+/* Estados de Citas */
+.bg-cita-programada { background-color: var(--cita-programada); }
+.bg-cita-atendida { background-color: var(--cita-atendida); }
+.bg-cita-cancelada { background-color: var(--cita-cancelada); }
+.bg-cita-no-asistio { background-color: var(--cita-no-asistio); }
+
+/* Roles */
+.bg-rol-odontologo { background-color: var(--rol-odontologo); }
+.bg-rol-recepcionista { background-color: var(--rol-recepcionista); }
+.bg-rol-admin { background-color: var(--rol-admin); }
+
+/* ========================================
+   MEDIA QUERIES - RESPONSIVE
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  /* Variables para modo oscuro cuando se implemente */
+  :root {
+    --color-bg: var(--dark-bg);
+    --card-bg: var(--dark-surface);
+    --color-text: var(--dark-text);
+    --color-gray-600: var(--dark-text-secondary);
+  }
+}

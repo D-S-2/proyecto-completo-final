@@ -1,0 +1,224 @@
+/* Importar paleta de colores centralizada */
+@import url('css/colores.css');
+
+/* ===============================
+   RESET BÁSICO
+   =============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* ===============================
+   LAYOUT GENERAL
+   =============================== */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: var(--spacing-lg);
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  padding: var(--spacing-lg);
+}
+
+/* ===============================
+   HEADER / NAVBAR
+   =============================== */
+
+.header {
+  background: var(--header-bg);
+  color: var(--header-text);
+  padding: var(--spacing-md) var(--spacing-xl);
+}
+
+.header h1 {
+  font-size: var(--font-size-xl);
+  font-family: var(--font-family);
+}
+
+/* ===============================
+   BOTONES
+   =============================== */
+
+.btn {
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 600;
+  font-family: var(--font-family);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background: var(--btn-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.btn-secondary {
+  background: var(--btn-secondary-bg);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover {
+  background: var(--btn-secondary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.btn-danger {
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+
+.btn-danger:hover {
+  background: #a02f26;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+/* ===============================
+   FORMULARIOS
+   =============================== */
+
+input, select, textarea {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--input-border);
+  margin-top: var(--spacing-xs);
+  font-family: var(--font-family);
+  background-color: var(--input-bg);
+  transition: var(--transition);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--input-focus);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-light-blue);
+}
+
+label {
+  font-weight: 600;
+  margin-top: var(--spacing-md);
+  display: block;
+  color: var(--color-gray-700);
+  font-family: var(--font-family);
+}
+
+/* ===============================
+   TABLAS
+   =============================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+th {
+  background: var(--table-header-bg);
+  color: var(--table-header-text);
+  padding: var(--spacing-md);
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+td {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--table-border);
+  font-family: var(--font-family);
+}
+
+tr:hover {
+  background-color: var(--table-row-hover);
+}
+
+/* ===============================
+   ROLES / VISTAS
+   =============================== */
+
+/* ODONTÓLOGO */
+.role-odontologo {
+  --role-color: var(--rol-odontologo);
+}
+
+/* RECEPCIONISTA */
+.role-recepcionista {
+  --role-color: var(--rol-recepcionista);
+}
+
+/* ADMIN */
+.role-admin {
+  --role-color: var(--rol-admin);
+}
+
+/* Uso del color por rol */
+.role-header {
+  background-color: var(--role-color);
+  color: var(--color-white);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+}
+
+/* ===============================
+   ALERTAS
+   =============================== */
+
+.alert {
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  margin: var(--spacing-sm) 0;
+  font-family: var(--font-family);
+  border-left: 4px solid;
+}
+
+.alert-success {
+  background: var(--alert-success-bg);
+  color: var(--color-success);
+  border-left-color: var(--alert-success-border);
+}
+
+.alert-warning {
+  background: var(--alert-warning-bg);
+  color: var(--color-warning);
+  border-left-color: var(--alert-warning-border);
+}
+
+.alert-danger {
+  background: var(--alert-danger-bg);
+  color: var(--color-danger);
+  border-left-color: var(--alert-danger-border);
+}
+
+.alert-info {
+  background: var(--alert-info-bg);
+  color: var(--color-info);
+  border-left-color: var(--alert-info-border);
+}
